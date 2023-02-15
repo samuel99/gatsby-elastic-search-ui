@@ -3,7 +3,6 @@ import { SearchProvider, SearchBox } from "@elastic/react-search-ui"
 import "@elastic/react-search-ui-views/lib/styles/styles.css"
 import { config } from "../config/config"
 import { Link, navigate } from "gatsby"
-import { WithSearch } from "@elastic/react-search-ui"
 
 const SiteLayout = ({ location, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
