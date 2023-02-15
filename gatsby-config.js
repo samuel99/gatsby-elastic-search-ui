@@ -11,7 +11,7 @@ module.exports = {
   siteMetadata: {
     title: `Gatsby + Elastic UI test`,
     author: {
-      name: `Kyle Mathews`,
+      name: `This repo is a test for Elastic UI and Gatsby`,
       summary: `who lives and works in San Francisco building useful things.`,
     },
     description: `A starter blog demonstrating what Gatsby can do.`,

@@ -13,28 +13,19 @@ const SiteLayout = ({ location, children }) => {
       <header className="global-header">
         <Link to="/">To startpage</Link>
         <SearchProvider config={config}>
-          <WithSearch
-            mapContextToProps={({ searchTerm, setSearchTerm }) => ({
-              searchTerm,
-              setSearchTerm,
-            })}
-          >
-            {({ searchTerm, setSearchTerm }) => (
-              <SearchBox
-                onSubmit={searchTerm => {
-                  navigate(`/searchresult/?q=${searchTerm}`)
-                }}
-                autocompleteMinimumCharacters={2}
-                autocompleteResults={{
-                  linkTarget: "_blank",
-                  sectionTitle: "Results",
-                  titleField: "title",
-                  urlField: "nps_link",
-                }}
-                debounceLength={200}
-              />
-            )}
-          </WithSearch>
+          <SearchBox
+            onSubmit={searchTerm => {
+              navigate(`/searchresult/?q=${searchTerm}`)
+            }}
+            autocompleteMinimumCharacters={2}
+            autocompleteResults={{
+              linkTarget: "_blank",
+              sectionTitle: "Results",
+              titleField: "title",
+              urlField: "nps_link",
+            }}
+            debounceLength={200}
+          />
         </SearchProvider>
       </header>
       <main>{children}</main>
