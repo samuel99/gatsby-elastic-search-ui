@@ -8,6 +8,10 @@
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
   "dependencies": {
+    "@elastic/react-search-ui": "^1.19.1",
+    "@elastic/react-search-ui-views": "^1.19.1",
+    "@elastic/search-ui": "^1.19.1",
+    "@elastic/search-ui-app-search-connector": "^1.19.1",
     "@fontsource/merriweather": "^4.5.14",
     "@fontsource/montserrat": "^4.5.14",
     "gatsby": "^5.6.0",
